@@ -7,41 +7,38 @@ Bewerbungswebsite / Portfolio: `https://kassemjaffal.github.io/Bewerbung-Portfol
 
 ## Ziel
 
-Bewerbung bei der Zander-Gruppe als Fachinformatiker für Systemintegration mit besonderem Interesse an Systemadministration, Support, Netzwerken, Hardware und klar dokumentierten technischen Prozessen.
+Bewerbung fuer eine Ausbildung im E-Commerce mit Fokus auf UX, Shop-Struktur, Produktdarstellung, Order-Prozesse und datenbasierte Auswertung.
 
 ## Kurzprofil
 
-Technisch interessierter und lernbereiter Bewerber mit ersten Praxiseinblicken durch ein Praktikum bei Bechtle AG. Besonders motivieren mich interne IT-Strukturen, First-Level-Support, Hardware-Einrichtung, Cisco-nahe Themen, virtuelle Maschinen und nachvollziehbare Problemloesung. Eigene Projekte in Python, Service-Dokumentation und Software-Konzepten ergaenzen meinen Werdegang um konkrete Arbeitsproben.
+Motivierter Bewerber mit praktischer Erfahrung in der User-Experience-Pruefung (Minijob / privat bei civey.at), eigenem Shopify-Testprojekt sowie strukturierter Arbeitsweise mit Excel fuer Bestellungen und Kennzahlen.
 
 ## Bildung
 
 **07/2025 - Abitur, Wentzinger Gymnasium, Freiburg**
 
-**seit 10/2025 - Universität Freiburg, Informatik**  
-Grundlagen aus dem ersten Semester mit Fokus auf Python, VS Code und technisches Problemverständnis.
+**seit 10/2025 - Universitaet Freiburg, Informatik**  
+Grundlagen in Python, logischer Problemloesung und digitalen Arbeitsmethoden.
 
 ## Praktische Erfahrung
 
-**23.09.2022 - 30.09.2022 - Praktikum, Bechtle AG Freiburg**  
-Einblicke in interne Systemadministration, First-Level-Support, Hardware für den Commerce-Shop, Cisco-Optimierung, virtuelle Maschinen und technische Abläufe im Unternehmensalltag.
+**Minijob / privat - User-Experience-Pruefer, civey.at**  
+Usability geprueft, Klickpfade bewertet, Probleme dokumentiert und Verbesserungsvorschlaege fuer ein klareres Nutzererlebnis entwickelt.
 
-**2023 - Soziales Praktikum, Kindergarten St. Elisabeth, Freiburg**  
-Staerkung von Teamfaehigkeit, Verantwortungsbewusstsein, Zuverlässigkeit und klarer Kommunikation.
+**Eigenes Projekt - Shopify-Testshop**  
+Shopstruktur aufgebaut, Produktseiten angelegt und Checkout-/Navigationsfluss praktisch getestet.
 
 ## Portfolio-Projekte
 
-- Praktikum Bechtle Freiburg: Support, Hardware, Cisco und virtuelle Maschinen
-- Service & Excel Dashboard: Ticketliste, Prioritäten, SLA und Dokumentation
-- Snake in Python: Logik, Schleifen, Zustandsverwaltung und Debugging
-- Yeet Plattform-Prototyp: Profil-, Feed- und Datenlogik als Software-Konzept
+- OrderFlow Excel Dashboard: Bestellstatus, Prioritaeten, KPI-Uebersicht
+- Mini Onlineshop Demo: 3 T-Shirts (weiss, schwarz, blau) mit Suche, Filter, Warenkorb, Rezensionen und Demo-PayPal-Checkout
 
 ## Kenntnisse
 
-- Interesse an Systemadministration, Support und technischen Infrastrukturen
-- Python-Grundlagen und Arbeit mit VS Code
-- Grundlagen aus dem Fach Rechnernetze
-- Strukturierte Dokumentation und Arbeit mit Excel-Listen
-- Lernbereit, genau, ruhig und teamfaehig
+- UX-Pruefung und nutzerzentriertes Denken
+- Shopify-Basisaufbau und E-Commerce-Struktur
+- Excel fuer Orders, Uebersichten und einfache KPI-Auswertung
+- Klare Kommunikation, strukturierte Dokumentation, zuverlaessige Arbeitsweise
 
 ## Sprachen
 

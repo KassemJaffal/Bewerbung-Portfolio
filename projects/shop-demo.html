@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Onlineshop Demo | Kassem Jaffal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../projects.css" />
+  </head>
+  <body class="project-page">
+    <header class="project-topbar">
+      <div class="project-shell project-topbar__inner">
+        <a class="project-back" href="../index.html">Zur Startseite</a>
+        <nav aria-label="Shop-Menue" class="project-nav">
+          <a href="#products">Produkte</a>
+          <a href="#reviews">Rezensionen</a>
+          <a href="#cart">Warenkorb</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-shell">
+      <section class="project-hero" data-reveal>
+        <div>
+          <p class="eyebrow">Projekt 02 · Mini Shop</p>
+          <h1>Onlineshop Demo mit 3 T-Shirts</h1>
+          <p>
+            Demo fuer einen kompakten Shop-Flow mit Suchfunktion, Farbfilter,
+            Warenkorb, Rezensionen und einem nicht-echten PayPal-Checkout.
+            Die Seite ist bewusst in Blau/Weiss gestaltet.
+          </p>
+          <div class="button-row">
+            <a class="button button--primary" href="../index.html#portfolio">Zur Portfolio-Uebersicht</a>
+            <a class="button button--secondary" href="excel-orders.html">Zum Excel-Projekt</a>
+          </div>
+        </div>
+
+        <aside class="hero-note">
+          <h2>Enthaltene Features</h2>
+          <ul>
+            <li>Top-Menue mit schnellen Sprungpunkten</li>
+            <li>Produkt-Suche und Filter nach Farbe</li>
+            <li>Warenkorb mit Mengensteuerung</li>
+            <li>PayPal Checkout als Demo (nicht echt)</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-panel" id="products" data-reveal>
+        <div class="shop-toolbar">
+          <label class="search-field" for="shopSearch">
+            <span>Produktsuche</span>
+            <input id="shopSearch" type="search" placeholder="z. B. weiss, schwarz, blau" autocomplete="off" />
+          </label>
+
+          <div class="filter-chips" aria-label="Farbfilter">
+            <button class="chip is-active" type="button" data-color-filter="all">Alle</button>
+            <button class="chip" type="button" data-color-filter="weiss">Weiss</button>
+            <button class="chip" type="button" data-color-filter="schwarz">Schwarz</button>
+            <button class="chip" type="button" data-color-filter="blau">Blau</button>
+          </div>
+        </div>
+
+        <div class="shop-layout">
+          <div class="product-grid" id="shopGrid">
+            <article class="product-card" data-product="white" data-name="T-Shirt Weiss" data-color="weiss" data-price="32.9">
+              <div class="tee tee--white" aria-hidden="true"></div>
+              <h3>T-Shirt Weiss</h3>
+              <p>Clean Basic Look, leichter Stoff, modern geschnitten.</p>
+              <p class="price">32,90 EUR</p>
+              <button class="button button--card" type="button" data-add="white">In den Warenkorb</button>
+            </article>
+
+            <article class="product-card" data-product="black" data-name="T-Shirt Schwarz" data-color="schwarz" data-price="36.9">
+              <div class="tee tee--black" aria-hidden="true"></div>
+              <h3>T-Shirt Schwarz</h3>
+              <p>Streetwear Fit mit klarer Silhouette und stabilem Material.</p>
+              <p class="price">36,90 EUR</p>
+              <button class="button button--card" type="button" data-add="black">In den Warenkorb</button>
+            </article>
+
+            <article class="product-card" data-product="blue" data-name="T-Shirt Blau" data-color="blau" data-price="34.9">
+              <div class="tee tee--blue" aria-hidden="true"></div>
+              <h3>T-Shirt Blau</h3>
+              <p>Signature Farbe, weicher Tragekomfort, alltagstaugliches Design.</p>
+              <p class="price">34,90 EUR</p>
+              <button class="button button--card" type="button" data-add="blue">In den Warenkorb</button>
+            </article>
+          </div>
+
+          <aside class="cart-panel" id="cart">
+            <h2>Warenkorb <span id="cartCount">0</span></h2>
+            <ul id="cartItems" class="cart-items">
+              <li class="cart-empty">Noch keine Produkte im Warenkorb.</li>
+            </ul>
+            <p class="cart-total">Gesamtsumme: <strong id="cartSubtotal">0,00 EUR</strong></p>
+            <button class="button button--primary" type="button" id="checkoutButton">Mit PayPal bezahlen (Demo)</button>
+            <p class="cart-note">Hinweis: Das ist ein Demo-Checkout ohne echte Zahlung.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="project-panel" id="reviews" data-reveal>
+        <p class="eyebrow">Rezensionen</p>
+        <h2>Kundenfeedback als Demo</h2>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <strong>"Super Fit und schneller Versand"</strong>
+            <p>Das weisse Shirt sitzt perfekt. Bestellung lief sehr klar und unkompliziert.</p>
+            <span>Laura M.</span>
+          </article>
+          <article class="review-card">
+            <strong>"Filter und Suche machen es einfach"</strong>
+            <p>Ich habe sofort die schwarze Variante gefunden. Checkout war verstaendlich.</p>
+            <span>Samir K.</span>
+          </article>
+          <article class="review-card">
+            <strong>"Blaue Farbe ist top"</strong>
+            <p>Produktseite klar, Warenkorb uebersichtlich. Genau so sollte ein Shop sein.</p>
+            <span>Jonas R.</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="checkoutModal" hidden>
+      <div class="modal__card">
+        <h2>PayPal Demo Checkout</h2>
+        <p id="checkoutSummary">Keine Produkte ausgewaehlt.</p>
+        <div class="modal__actions">
+          <button class="button button--primary" type="button" id="confirmPaypal">Demo-Zahlung abschliessen</button>
+          <button class="button button--secondary" type="button" id="closeCheckout">Schliessen</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+    <script src="shop-demo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrderFlow Excel Dashboard | Kassem Jaffal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../projects.css" />
+  </head>
+  <body class="project-page">
+    <header class="project-topbar">
+      <div class="project-shell project-topbar__inner">
+        <a class="project-back" href="../index.html">Zur Startseite</a>
+        <nav aria-label="Projekt-Navigation" class="project-nav">
+          <a href="excel-orders.html" class="is-active">OrderFlow Excel</a>
+          <a href="shop-demo.html">Mini Shop Demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-shell">
+      <section class="project-hero" data-reveal>
+        <div>
+          <p class="eyebrow">Projekt 01 · Operations</p>
+          <h1>OrderFlow Excel Dashboard</h1>
+          <p>
+            Dieses Projekt zeigt, wie ich Bestellungen in einem E-Commerce-Prozess
+            strukturiere: von der Uebersicht ueber Prioritaeten bis zu KPI-Auswertungen.
+            Ziel ist ein klarer, belastbarer Ablauf fuer den Alltag.
+          </p>
+          <div class="button-row">
+            <a class="button button--primary" href="../index.html#portfolio">Zur Portfolio-Uebersicht</a>
+            <a class="button button--secondary" href="shop-demo.html">Zum Shop-Demo-Projekt</a>
+          </div>
+        </div>
+
+        <aside class="hero-note">
+          <h2>Fokus</h2>
+          <ul>
+            <li>Order-Status nachvollziehbar verwalten</li>
+            <li>Reibungslose Kommunikation zwischen Shop und Service</li>
+            <li>KPI-Sicht auf Lieferzeit, Retouren und Prioritaeten</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">KPI Snapshot</p>
+        <h2>Schneller Blick auf die operative Lage</h2>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span>Bestellungen</span>
+            <strong>148</strong>
+            <small>letzte 30 Tage</small>
+          </article>
+          <article class="metric-card">
+            <span>On-time Versand</span>
+            <strong>94%</strong>
+            <small>innerhalb SLA</small>
+          </article>
+          <article class="metric-card">
+            <span>Retourenquote</span>
+            <strong>6.2%</strong>
+            <small>tracking aktiv</small>
+          </article>
+          <article class="metric-card">
+            <span>Offene Faelle</span>
+            <strong>11</strong>
+            <small>in Bearbeitung</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Beispieltabelle</p>
+        <h2>Welche Felder ich im Order-Sheet nutze</h2>
+        <div class="table-wrap">
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Produkt</th>
+                <th>Status</th>
+                <th>Prioritaet</th>
+                <th>Versanddatum</th>
+                <th>Wert</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ORD-2148</td>
+                <td>T-Shirt Blau</td>
+                <td>Versendet</td>
+                <td>Mittel</td>
+                <td>2026-03-03</td>
+                <td>34,90 EUR</td>
+              </tr>
+              <tr>
+                <td>ORD-2150</td>
+                <td>T-Shirt Schwarz</td>
+                <td>Offen</td>
+                <td>Hoch</td>
+                <td>2026-03-05</td>
+                <td>36,90 EUR</td>
+              </tr>
+              <tr>
+                <td>ORD-2151</td>
+                <td>T-Shirt Weiss</td>
+                <td>Rueckfrage Kunde</td>
+                <td>Mittel</td>
+                <td>2026-03-06</td>
+                <td>32,90 EUR</td>
+              </tr>
+              <tr>
+                <td>ORD-2153</td>
+                <td>3x Bundle Mix</td>
+                <td>In Bearbeitung</td>
+                <td>Hoch</td>
+                <td>2026-03-06</td>
+                <td>99,00 EUR</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Prozess</p>
+        <h2>So denke ich E-Commerce-Operations</h2>
+        <div class="process-grid">
+          <article>
+            <h3>1. Intake</h3>
+            <p>Bestellungen werden zentral erfasst und direkt nach Prioritaet/Status markiert.</p>
+          </article>
+          <article>
+            <h3>2. Fulfillment</h3>
+            <p>Versandrelevante Aufgaben werden gebuendelt, damit SLA-Zeiten stabil bleiben.</p>
+          </article>
+          <article>
+            <h3>3. Support Loop</h3>
+            <p>Rueckfragen, Retouren und Problemfaelle bekommen transparente Owner und Deadlines.</p>
+          </article>
+          <article>
+            <h3>4. Report</h3>
+            <p>Woechentliche KPI-Auswertung fuer bessere Entscheidungen in Sortiment und Ablauf.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Mehrwert</p>
+        <h2>Warum dieses Projekt zur Ausbildung passt</h2>
+        <ul class="badge-list">
+          <li>Zeigt strukturierte Arbeitsweise bei Bestellungen und Daten.</li>
+          <li>Verbindet UX-Denken mit operativer Umsetzbarkeit.</li>
+          <li>Belegt, dass ich Prozesse in Excel sauber modellieren kann.</li>
+          <li>Ist direkt auf E-Commerce-Teamarbeit uebertragbar.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
