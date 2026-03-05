@@ -26,12 +26,13 @@ Grundlagen in Python, logischer Problemlösung und digitalen Arbeitsmethoden.
 Usability geprüft, Klickpfade bewertet, Probleme dokumentiert und Verbesserungsvorschläge für ein klareres Nutzererlebnis entwickelt.
 
 **Eigenes Projekt - Shopify-Testshop**  
-Shopstruktur aufgebaut, Produktseiten angelegt und Checkout-/Navigationsfluss praktisch getestet.
+Shopstruktur aufgebaut, Produktseiten angelegt und Warenkorb-/Navigationsfluss praktisch getestet.
 
 ## Portfolio-Projekte
 
 - OrderFlow Excel Dashboard: Bestellstatus, Prioritäten, KPI-Übersicht
-- Mini Onlineshop Demo: 3 T-Shirts (weiß, schwarz, blau) mit Suche, Filter, Warenkorb, Rezensionen und Demo-PayPal-Checkout
+- Mini Onlineshop Demo: 3 T-Shirts (weiß, schwarz, blau) mit Suche, Filter, Favoriten, Warenkorb und Rezensionen
+- Lead Funnel Demo: Produktbeschreibung, Formularschritte (Name/Adresse) und Terminwahl per Kalender
 
 ## Kenntnisse
 

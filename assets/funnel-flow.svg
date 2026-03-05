@@ -1,0 +1,58 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="220" y1="80" x2="1340" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF6FF"/>
+      <stop offset="1" stop-color="#D6E9FF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#EAF3FF" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0D63FF"/>
+      <stop offset="1" stop-color="#58BEFF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0A428F" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1320" cy="140" r="240" fill="#7FD0FF" fill-opacity="0.2"/>
+  <circle cx="180" cy="860" r="220" fill="#0D63FF" fill-opacity="0.16"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="180" width="1360" height="640" rx="42" fill="url(#card)" stroke="#BBD6FF"/>
+
+    <rect x="200" y="260" width="390" height="470" rx="30" fill="#FFFFFF" stroke="#BED7FF"/>
+    <rect x="250" y="300" width="290" height="170" rx="20" fill="#EAF3FF"/>
+    <rect x="250" y="498" width="220" height="18" rx="9" fill="#B5D2FF"/>
+    <rect x="250" y="532" width="276" height="12" rx="6" fill="#D0E4FF"/>
+    <rect x="250" y="556" width="244" height="12" rx="6" fill="#D0E4FF"/>
+    <rect x="250" y="598" width="170" height="42" rx="21" fill="url(#accent)"/>
+    <text x="270" y="625" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="700">Produkt wählen</text>
+
+    <rect x="650" y="260" width="390" height="470" rx="30" fill="#FFFFFF" stroke="#BED7FF"/>
+    <rect x="700" y="312" width="290" height="54" rx="12" fill="#F4F9FF" stroke="#C8DEFF"/>
+    <rect x="700" y="390" width="290" height="54" rx="12" fill="#F4F9FF" stroke="#C8DEFF"/>
+    <rect x="700" y="468" width="290" height="54" rx="12" fill="#F4F9FF" stroke="#C8DEFF"/>
+    <rect x="700" y="546" width="290" height="54" rx="12" fill="#F4F9FF" stroke="#C8DEFF"/>
+    <rect x="700" y="628" width="180" height="42" rx="21" fill="url(#accent)"/>
+    <text x="732" y="655" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="700">Weiter</text>
+
+    <rect x="1100" y="260" width="300" height="470" rx="30" fill="#FFFFFF" stroke="#BED7FF"/>
+    <rect x="1148" y="320" width="204" height="54" rx="12" fill="#F4F9FF" stroke="#C8DEFF"/>
+    <rect x="1148" y="396" width="204" height="54" rx="12" fill="#F4F9FF" stroke="#C8DEFF"/>
+    <rect x="1148" y="472" width="204" height="54" rx="12" fill="#F4F9FF" stroke="#C8DEFF"/>
+    <rect x="1148" y="572" width="204" height="46" rx="23" fill="url(#accent)"/>
+    <text x="1170" y="602" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="700">Anfrage senden</text>
+
+    <path d="M595 495H638" stroke="#4B8AFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M1045 495H1088" stroke="#4B8AFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M620 478L640 495L620 512" stroke="#4B8AFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1070 478L1090 495L1070 512" stroke="#4B8AFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="170" y="140" fill="#0D4DBB" font-family="Arial, sans-serif" font-size="56" font-weight="700">Lead Funnel Demo</text>
+  <text x="172" y="190" fill="#345989" font-family="Arial, sans-serif" font-size="28">Produkt vorstellen, Kundendaten erfassen und Termin buchen</text>
+</svg>

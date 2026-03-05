@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260305-3" />
   </head>
   <body>
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -86,11 +86,11 @@
               <article class="bento-card" data-spotlight data-tilt>
                 <p class="bento-card__kicker">Build</p>
                 <h3>Shopify gelernt</h3>
-                <p>Produktseiten, Navigation und Checkout-Flow selbst aufgebaut.</p>
+                <p>Produktseiten, Navigation und Warenkorb-Flow selbst aufgebaut.</p>
               </article>
 
               <article class="bento-card bento-card--metric" data-spotlight data-tilt>
-                <strong data-count="2">2</strong>
+                <strong data-count="3">3</strong>
                 <p>Portfolio-Projekte speziell für E-Commerce und Operations.</p>
               </article>
 
@@ -112,7 +112,7 @@
           <span>Produkttexte</span>
           <span>Suchfunktion &amp; Filter</span>
           <span>Warenkorb-Logik</span>
-          <span>Checkout Flow</span>
+          <span>Funnel-Formulare</span>
         </div>
       </section>
 
@@ -152,7 +152,7 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Interaktive Features</p>
-            <h2>2026-Style: klickbare Szenarien, Rechner und Live-Vorschau</h2>
+            <h2>2026-Style: klickbare Szenarien, Rechner, Live-Vorschau und Design-Tools</h2>
           </div>
 
           <div class="interactive-grid">
@@ -203,6 +203,29 @@
                 </article>
               </div>
             </article>
+
+            <article class="interactive-card" data-spotlight data-tilt>
+              <h3>Webdesign Toolkit</h3>
+              <p class="interactive-note">Teste Theme-Varianten und passe Design-Parameter live an.</p>
+
+              <div class="scenario-tabs" role="group" aria-label="Theme Auswahl">
+                <button class="chip is-active" type="button" data-theme="commerce">Commerce</button>
+                <button class="chip" type="button" data-theme="ocean">Ocean</button>
+                <button class="chip" type="button" data-theme="clean">Clean</button>
+              </div>
+
+              <div class="range-group">
+                <label for="radiusRange">Card-Radius: <strong id="radiusValue">22 px</strong></label>
+                <input id="radiusRange" type="range" min="14" max="34" step="1" value="22" />
+              </div>
+
+              <div class="range-group">
+                <label for="blurRange">Header-Glas-Effekt: <strong id="blurValue">16 px</strong></label>
+                <input id="blurRange" type="range" min="0" max="24" step="1" value="16" />
+              </div>
+
+              <p class="interactive-note">Direkt nutzbar als UI-Playground für Design-Entscheidungen.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -238,7 +261,7 @@
                   <span class="timeline-item__date">Eigenes Projekt</span>
                   <div>
                     <strong>Shopify-Testshop</strong>
-                    <p>Eigenen Onlineshop-Versuch aufgebaut: Produkte anlegen, Struktur planen, Checkout-Flow testen und Menüführung optimieren.</p>
+                    <p>Eigenen Onlineshop-Versuch aufgebaut: Produkte anlegen, Struktur planen, Warenkorb-Flow testen und Menüführung optimieren.</p>
                   </div>
                 </article>
                 <article class="timeline-item">
@@ -276,7 +299,7 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Portfolio</p>
-            <h2>Zwei Projekte, die direkt E-Commerce-Kompetenz zeigen</h2>
+            <h2>Drei Projekte, die direkt E-Commerce-Kompetenz zeigen</h2>
           </div>
 
           <div class="portfolio-toolbar">
@@ -294,10 +317,11 @@
               <button class="chip is-active" type="button" data-filter="all">Alle</button>
               <button class="chip" type="button" data-filter="operations">Operations</button>
               <button class="chip" type="button" data-filter="shop">Shop</button>
+              <button class="chip" type="button" data-filter="funnel">Funnel</button>
             </div>
           </div>
 
-          <p class="results-copy" id="portfolioResultCount">2 Projekte gefunden</p>
+          <p class="results-copy" id="portfolioResultCount">3 Projekte gefunden</p>
 
           <div class="portfolio-grid" id="portfolioGrid">
             <article
@@ -344,6 +368,30 @@
                 <p class="portfolio-card__meta">Features: Produktlogik, UX, Interaktion</p>
                 <div class="portfolio-card__actions">
                   <a class="button button--card" href="projects/shop-demo.html">Live-Demo öffnen</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="portfolio-card"
+              data-category="funnel"
+              data-search="funnel formular kalender termin name adresse lead produktberatung ecommerce"
+              data-spotlight
+              data-tilt
+            >
+              <div class="portfolio-card__media" aria-hidden="true">
+                <img src="assets/funnel-flow.svg" alt="" loading="lazy" />
+              </div>
+              <div class="portfolio-card__body">
+                <span class="portfolio-card__tag">Funnel</span>
+                <h3>Lead Funnel Produktberatung</h3>
+                <p>
+                  Interaktiver Funnel mit Produktbeschreibung, Datenerfassung
+                  (Name, Adresse) und Terminwahl per Kalender.
+                </p>
+                <p class="portfolio-card__meta">Features: Formular-Logik, Validierung, Step-UX</p>
+                <div class="portfolio-card__actions">
+                  <a class="button button--card" href="projects/funnel-demo.html">Funnel-Demo öffnen</a>
                 </div>
               </div>
             </article>
@@ -402,6 +450,6 @@
 
     <div class="copy-toast" id="copyToast" hidden>E-Mail-Adresse kopiert</div>
 
-    <script src="main.js"></script>
+    <script src="main.js?v=20260305-3"></script>
   </body>
 </html>

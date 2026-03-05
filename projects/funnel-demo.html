@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lead Funnel Demo | Kassem Jaffal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css?v=20260305-3" />
+    <link rel="stylesheet" href="../projects.css?v=20260305-3" />
+  </head>
+  <body class="project-page funnel-page">
+    <header class="project-topbar">
+      <div class="project-shell project-topbar__inner">
+        <a class="project-back" href="../index.html">Zur Startseite</a>
+        <nav aria-label="Projekt-Navigation" class="project-nav">
+          <a href="excel-orders.html">OrderFlow Excel</a>
+          <a href="shop-demo.html">Mini Shop Demo</a>
+          <a href="funnel-demo.html" class="is-active">Lead Funnel Demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-shell">
+      <section class="project-hero" data-reveal>
+        <div>
+          <p class="eyebrow">Projekt 03 · Funnel</p>
+          <h1>Lead Funnel für Produktberatung mit Kalender-Termin</h1>
+          <p>
+            Dieses Portfolio-Projekt zeigt einen realistischen Funnel: Produkt
+            vorstellen, Kundendaten erfassen und einen Termin mit Kalender
+            auswählen. Fokus liegt auf verständlicher Schrittführung,
+            Validierung und sauberer Datenübergabe.
+          </p>
+          <div class="button-row">
+            <a class="button button--primary" href="../index.html#portfolio">Zur Portfolio-Übersicht</a>
+            <a class="button button--secondary" href="shop-demo.html">Zum Shop-Demo-Projekt</a>
+          </div>
+        </div>
+
+        <aside class="hero-note">
+          <h2>Funnel-Bausteine</h2>
+          <ul>
+            <li>Produktnutzen klar beschrieben</li>
+            <li>Schrittweises Formular mit Pflichtfeldern</li>
+            <li>Terminwahl per Datum + Zeitfenster</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Produkt-Intro</p>
+        <h2>Featured Produkt für die Beratung</h2>
+        <div class="funnel-product">
+          <img src="../assets/funnel-flow.svg" alt="Visualisierung des Funnel-Prozesses" loading="lazy" />
+          <div>
+            <h3>E-Commerce Starter Blueprint</h3>
+            <p>
+              Kompakter Beratungspfad für kleine Shops: Fokus auf bessere
+              Produktdarstellung, klare Conversion-Pfade und effizientere
+              Abläufe im Alltag.
+            </p>
+            <ul class="badge-list">
+              <li>UX-Audit für Startseite und Kategorieansicht</li>
+              <li>Optimierter Warenkorb- und Funnel-Ablauf</li>
+              <li>Roadmap für 30 Tage mit KPI-Tracking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Interaktiver Funnel</p>
+        <h2>Produkt wählen, Daten eintragen, Termin senden</h2>
+
+        <div class="funnel-shell">
+          <ol class="funnel-steps" aria-label="Funnel Schritte">
+            <li data-funnel-indicator class="is-active">1. Produkt</li>
+            <li data-funnel-indicator>2. Kontaktdaten</li>
+            <li data-funnel-indicator>3. Termin</li>
+          </ol>
+
+          <form id="funnelForm" class="funnel-form" novalidate>
+            <section class="funnel-step" data-funnel-step>
+              <h3>Welches Paket interessiert dich?</h3>
+              <div class="funnel-options" role="radiogroup" aria-label="Paket auswählen">
+                <label class="funnel-option">
+                  <input type="radio" name="package" value="Starter Audit" checked />
+                  <span>
+                    <strong>Starter Audit</strong>
+                    <small>149 EUR · Analyse + Quick Fixes</small>
+                  </span>
+                </label>
+                <label class="funnel-option">
+                  <input type="radio" name="package" value="Growth Paket" />
+                  <span>
+                    <strong>Growth Paket</strong>
+                    <small>329 EUR · Audit + Funnel + KPI Setup</small>
+                  </span>
+                </label>
+              </div>
+            </section>
+
+            <section class="funnel-step" data-funnel-step hidden>
+              <h3>Kontaktdaten</h3>
+              <div class="funnel-fields">
+                <label>
+                  Name
+                  <input id="leadName" name="leadName" type="text" required />
+                </label>
+                <label>
+                  E-Mail
+                  <input id="leadEmail" name="leadEmail" type="email" required />
+                </label>
+                <label>
+                  Adresse
+                  <input id="leadAddress" name="leadAddress" type="text" required />
+                </label>
+                <label>
+                  Stadt
+                  <input id="leadCity" name="leadCity" type="text" required />
+                </label>
+              </div>
+            </section>
+
+            <section class="funnel-step" data-funnel-step hidden>
+              <h3>Termin auswählen</h3>
+              <div class="funnel-fields">
+                <label>
+                  Datum
+                  <input id="leadDate" name="leadDate" type="date" required />
+                </label>
+                <label>
+                  Zeitfenster
+                  <select id="leadSlot" name="leadSlot" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="09:00 - 10:00">09:00 - 10:00</option>
+                    <option value="11:30 - 12:30">11:30 - 12:30</option>
+                    <option value="15:00 - 16:00">15:00 - 16:00</option>
+                    <option value="17:00 - 18:00">17:00 - 18:00</option>
+                  </select>
+                </label>
+                <label class="funnel-fields__wide">
+                  Notiz (optional)
+                  <textarea name="leadNote" rows="3" placeholder="Ziel, Fragen oder aktueller Shop-Status"></textarea>
+                </label>
+              </div>
+            </section>
+
+            <div class="funnel-actions">
+              <button class="button button--secondary" type="button" id="funnelPrev" disabled>Zurück</button>
+              <button class="button button--primary" type="button" id="funnelNext">Weiter</button>
+              <button class="button button--primary" type="submit" id="funnelSubmit" hidden>Anfrage senden</button>
+            </div>
+          </form>
+
+          <aside class="funnel-summary" aria-live="polite">
+            <h3>Live-Zusammenfassung</h3>
+            <p><strong>Paket:</strong> <span id="summaryPackage">Starter Audit</span></p>
+            <p><strong>Name:</strong> <span id="summaryName">-</span></p>
+            <p><strong>Adresse:</strong> <span id="summaryAddress">-</span></p>
+            <p><strong>Termin:</strong> <span id="summaryDate">-</span></p>
+            <p><strong>Slot:</strong> <span id="summarySlot">-</span></p>
+          </aside>
+        </div>
+
+        <p class="funnel-feedback" id="funnelFeedback" hidden></p>
+      </section>
+    </main>
+
+    <script src="../main.js?v=20260305-3"></script>
+    <script src="funnel-demo.js?v=20260305-3"></script>
+  </body>
+</html>

@@ -24,6 +24,12 @@ const basketValue = document.getElementById("basketValue");
 const ordersOutput = document.getElementById("ordersOutput");
 const revenueOutput = document.getElementById("revenueOutput");
 
+const themeButtons = [...document.querySelectorAll("[data-theme]")];
+const radiusRange = document.getElementById("radiusRange");
+const blurRange = document.getElementById("blurRange");
+const radiusValue = document.getElementById("radiusValue");
+const blurValue = document.getElementById("blurValue");
+
 const tiltTargets = [...document.querySelectorAll("[data-tilt]")];
 
 let activeFilter = "all";
@@ -47,6 +53,39 @@ const scenarios = {
     text: "Wiederkehrende Nutzer durch personalisierte Vorschläge, übersichtliche Kontobereiche und klare Reorder-Pfade.",
     image: "assets/ecom-scenario-retain.svg",
     alt: "Szenario-Vorschau Retention"
+  }
+};
+
+const themePresets = {
+  commerce: {
+    "--bg-0": "#eff5ff",
+    "--bg-1": "#f9fbff",
+    "--bg-2": "#d9e9ff",
+    "--primary": "#0d63ff",
+    "--primary-strong": "#034ccf",
+    "--primary-soft": "#49b9ff",
+    "--line": "#bfd8ff",
+    "--line-strong": "#a8c9ff"
+  },
+  ocean: {
+    "--bg-0": "#e7f9ff",
+    "--bg-1": "#f3fcff",
+    "--bg-2": "#cdefff",
+    "--primary": "#067fce",
+    "--primary-strong": "#005fa6",
+    "--primary-soft": "#37b5e9",
+    "--line": "#a9daf4",
+    "--line-strong": "#7ec9eb"
+  },
+  clean: {
+    "--bg-0": "#f3f7ff",
+    "--bg-1": "#fbfdff",
+    "--bg-2": "#e3ecff",
+    "--primary": "#1b5bce",
+    "--primary-strong": "#1a45a4",
+    "--primary-soft": "#6ca9ff",
+    "--line": "#c6d8fa",
+    "--line-strong": "#b4c9f2"
   }
 };
 
@@ -336,6 +375,66 @@ function bindKpiCalculator() {
   updateKpiCalculator();
 }
 
+function applyThemePreset(themeKey) {
+  const preset = themePresets[themeKey];
+  if (!preset) {
+    return;
+  }
+
+  Object.entries(preset).forEach(([name, value]) => {
+    document.documentElement.style.setProperty(name, value);
+  });
+
+  themeButtons.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.theme === themeKey);
+  });
+}
+
+function bindDesignToolkit() {
+  if (!themeButtons.length && !radiusRange && !blurRange) {
+    return;
+  }
+
+  themeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      applyThemePreset(button.dataset.theme || "commerce");
+    });
+  });
+
+  const initialTheme = themeButtons.find((button) => button.classList.contains("is-active"));
+  if (initialTheme) {
+    applyThemePreset(initialTheme.dataset.theme || "commerce");
+  }
+
+  if (radiusRange) {
+    const updateRadius = () => {
+      const radius = Number(radiusRange.value);
+      const radiusSmall = Math.max(10, Math.round(radius * 0.64));
+      document.documentElement.style.setProperty("--radius", `${radius}px`);
+      document.documentElement.style.setProperty("--radius-sm", `${radiusSmall}px`);
+      if (radiusValue) {
+        radiusValue.textContent = `${radius} px`;
+      }
+    };
+
+    radiusRange.addEventListener("input", updateRadius);
+    updateRadius();
+  }
+
+  if (blurRange) {
+    const updateBlur = () => {
+      const blur = Number(blurRange.value);
+      document.documentElement.style.setProperty("--frost-blur", `${blur}px`);
+      if (blurValue) {
+        blurValue.textContent = `${blur} px`;
+      }
+    };
+
+    blurRange.addEventListener("input", updateBlur);
+    updateBlur();
+  }
+}
+
 function bindTilt() {
   if (!tiltTargets.length) {
     return;
@@ -370,6 +469,7 @@ bindPortfolioFilters();
 bindCopyEmail();
 bindScenarioSwitcher();
 bindKpiCalculator();
+bindDesignToolkit();
 bindTilt();
 
 updateProgressBar();

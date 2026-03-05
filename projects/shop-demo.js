@@ -45,6 +45,11 @@ const sliderPrev = document.getElementById("sliderPrev");
 const sliderNext = document.getElementById("sliderNext");
 const sliderDots = document.getElementById("shopSliderDots");
 
+// Defensive cleanup: removes legacy modal markup from old cached versions.
+document.getElementById("checkoutModal")?.remove();
+document.querySelector(".modal-backdrop")?.remove();
+document.body.style.removeProperty("overflow");
+
 const cart = {
   white: 0,
   black: 0,
