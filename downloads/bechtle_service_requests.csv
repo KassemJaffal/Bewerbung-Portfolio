@@ -1,0 +1,25 @@
+ticket_id,date,location,category,priority,status,device,resolution_hours,sla_met
+SR-101,2026-02-03,Freiburg HQ,Hardware,High,Resolved,Dell Latitude,3.5,Yes
+SR-102,2026-02-03,Service Desk,Accounts,Medium,Resolved,Microsoft 365,2.8,Yes
+SR-103,2026-02-04,Freiburg HQ,Network,High,Resolved,Cisco Switch,6.0,Yes
+SR-104,2026-02-04,Commerce Area,Software,Low,Resolved,VMware Workstation,4.5,Yes
+SR-105,2026-02-04,Warehouse,Hardware,Medium,Resolved,Barcode Scanner,3.8,Yes
+SR-106,2026-02-05,Service Desk,Accounts,Medium,Resolved,Active Directory,8.2,Yes
+SR-107,2026-02-05,Freiburg HQ,Network,High,Resolved,Access Point,7.3,Yes
+SR-108,2026-02-05,Commerce Area,Hardware,High,Resolved,POS Terminal,10.5,No
+SR-109,2026-02-06,Service Desk,Accounts,Low,Resolved,User Account,6.7,Yes
+SR-110,2026-02-06,Freiburg HQ,Software,Medium,Resolved,Cisco AnyConnect,5.8,Yes
+SR-111,2026-02-06,Warehouse,Hardware,Medium,Resolved,Printer,9.4,Yes
+SR-112,2026-02-07,Service Desk,Accounts,Low,Resolved,Password Reset,3.8,Yes
+SR-113,2026-02-07,Freiburg HQ,Network,Medium,Resolved,Cisco Firewall,7.8,Yes
+SR-114,2026-02-08,Commerce Area,Hardware,Medium,Resolved,Checkout PC,9.9,Yes
+SR-115,2026-02-08,Freiburg HQ,Network,High,Resolved,VLAN Routing,12.3,No
+SR-116,2026-02-09,Service Desk,Accounts,Medium,Resolved,Teams Access,5.6,Yes
+SR-117,2026-02-09,Commerce Area,Hardware,Medium,Resolved,Monitor,6.7,Yes
+SR-118,2026-02-10,Freiburg HQ,Software,Low,Resolved,Virtual Machine,8.1,Yes
+SR-119,2026-02-10,Warehouse,Hardware,Low,Resolved,Label Printer,6.4,Yes
+SR-120,2026-02-11,Service Desk,Accounts,Medium,Resolved,Mailbox,7.2,Yes
+SR-121,2026-02-11,Freiburg HQ,Software,Medium,Resolved,Cisco Jabber,8.8,Yes
+SR-122,2026-02-12,Service Desk,Accounts,Low,Resolved,File Access,5.9,Yes
+SR-123,2026-02-12,Freiburg HQ,Network,Medium,Resolved,Patch Panel,6.4,Yes
+SR-124,2026-02-13,Commerce Area,Hardware,Low,Resolved,Thin Client,6.8,Yes

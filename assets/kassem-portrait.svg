@@ -1,0 +1,29 @@
+<svg width="900" height="1120" viewBox="0 0 900 1120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="124" y1="90" x2="780" y2="1036" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FDF9"/>
+      <stop offset="1" stop-color="#E2F5E9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="226" y1="230" x2="676" y2="822" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F8B4C"/>
+      <stop offset="1" stop-color="#49C47D"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1120" rx="64" fill="url(#bg)"/>
+  <circle cx="450" cy="360" r="164" fill="#D7EEE0"/>
+  <path d="M450 224C406 224 366 246 341 282C319 314 311 351 321 388C332 428 363 465 405 482C428 491 449 493 471 488C514 480 551 451 570 408C589 364 585 310 557 274C532 242 493 224 450 224Z" fill="#1B2B24"/>
+  <path d="M356 368C356 293 397 258 451 258C505 258 544 295 544 365V430C544 497 502 548 450 548C398 548 356 497 356 430V368Z" fill="#E7C7A8"/>
+  <path d="M318 944C326 842 392 766 486 766H505C604 766 675 845 681 944L686 1018H313L318 944Z" fill="#20272D"/>
+  <path d="M373 714H528L554 792H348L373 714Z" fill="#FFFFFF"/>
+  <path d="M381 169C441 141 506 153 547 190C588 227 608 288 600 344C591 407 566 429 546 420C526 412 520 358 505 330C490 301 452 288 405 298C360 307 323 347 314 382C306 414 289 422 278 403C260 372 266 300 296 248C313 219 342 188 381 169Z" fill="#20272D"/>
+  <rect x="286" y="778" width="328" height="36" rx="18" fill="#EDF8F1"/>
+  <g opacity="0.95">
+    <rect x="88" y="86" width="176" height="48" rx="24" fill="#0F8B4C" fill-opacity="0.12"/>
+    <path d="M120 102H148V118H120V102Z" fill="url(#accent)"/>
+    <path d="M134 88V132" stroke="url(#accent)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <rect x="72" y="892" width="264" height="140" rx="32" fill="#FFFFFF" fill-opacity="0.9"/>
+  <text x="108" y="944" fill="#0F8B4C" font-family="Space Grotesk, Arial, sans-serif" font-size="56" font-weight="700">KJ</text>
+  <text x="108" y="986" fill="#254937" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">Profilfoto bereit</text>
+  <text x="108" y="1020" fill="#5B7365" font-family="Inter, Arial, sans-serif" font-size="22">Kann durch dein echtes Portrait ersetzt werden</text>
+</svg>

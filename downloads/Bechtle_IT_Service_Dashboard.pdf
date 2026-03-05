@@ -1,0 +1,108 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [5 0 R 6 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+7 0 obj
+<< /Length 1923 >>
+stream
+q
+0.06 0.55 0.30 rg
+36 744 523 56 re f
+Q
+BT /F2 24 Tf 48 772 Td (Bechtle IT Service Dashboard) Tj ET
+BT /F1 11 Tf 48 752 Td (Bewerbungsprojekt zu Serviceanfragen, Prioritaeten, SLA und Dokumentation.) Tj ET
+0.18 0.68 0.39 rg
+48 676 116 52 re f
+0.18 0.68 0.39 rg
+168 676 116 52 re f
+0.18 0.68 0.39 rg
+288 676 116 52 re f
+0.18 0.68 0.39 rg
+408 676 116 52 re f
+BT /F1 10 Tf 60 710 Td (Tickets) Tj ET
+BT /F2 17 Tf 60 690 Td (24) Tj ET
+BT /F1 10 Tf 180 710 Td (Avg. time) Tj ET
+BT /F2 17 Tf 180 690 Td (6,8 h) Tj ET
+BT /F1 10 Tf 300 710 Td (SLA rate) Tj ET
+BT /F2 17 Tf 300 690 Td (91.7%) Tj ET
+BT /F1 10 Tf 420 710 Td (Same day) Tj ET
+BT /F2 17 Tf 420 690 Td (70.8%) Tj ET
+BT /F2 13 Tf 48 648 Td (Tickets nach Kategorie) Tj ET
+BT /F2 13 Tf 310 648 Td (Prioritaeten) Tj ET
+BT /F1 11 Tf 56 626 Td (Hardware) Tj ET
+BT /F2 11 Tf 180 626 Td (8) Tj ET
+BT /F1 11 Tf 56 606 Td (Accounts) Tj ET
+BT /F2 11 Tf 180 606 Td (7) Tj ET
+BT /F1 11 Tf 56 586 Td (Network) Tj ET
+BT /F2 11 Tf 180 586 Td (5) Tj ET
+BT /F1 11 Tf 56 566 Td (Software) Tj ET
+BT /F2 11 Tf 180 566 Td (4) Tj ET
+BT /F1 11 Tf 318 626 Td (High) Tj ET
+BT /F2 11 Tf 418 626 Td (5) Tj ET
+BT /F1 11 Tf 318 606 Td (Medium) Tj ET
+BT /F2 11 Tf 418 606 Td (12) Tj ET
+BT /F1 11 Tf 318 586 Td (Low) Tj ET
+BT /F2 11 Tf 418 586 Td (7) Tj ET
+BT /F2 13 Tf 48 500 Td (Ableitung) Tj ET
+BT /F1 11 Tf 56 478 Td (Die haeufigsten Themen liegen bei Hardware und Accounts.) Tj ET
+BT /F1 11 Tf 56 460 Td (Das spricht fuer klare Standards bei Geraete-Setups und Benutzerverwaltung.) Tj ET
+BT /F2 13 Tf 56 430 Td (Nutzen fuer die Bewerbung) Tj ET
+BT /F1 11 Tf 56 408 Td (Das Projekt zeigt strukturierte Dokumentation, Priorisierung und Service-Denken.) Tj ET
+BT /F1 11 Tf 56 390 Td (Genau diese Kombination ist fuer Support und Systemadministration relevant.) Tj ET
+BT /F1 10 Tf 48 82 Td (Service-Dashboard fuer die Bewerbungswebsite. Alle Werte sind als realistische Beispieldaten aufgebaut.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Length 1348 >>
+stream
+q
+0.06 0.55 0.30 rg
+36 744 523 56 re f
+Q
+BT /F2 22 Tf 48 772 Td (Service Dashboard - Insights & Arbeitsweise) Tj ET
+BT /F1 11 Tf 48 752 Td (Die zweite Seite verdichtet die Zahlen auf konkrete Schluesse fuer den Arbeitsalltag.) Tj ET
+BT /F2 14 Tf 48 712 Td (1. Priorisieren statt verteilen) Tj ET
+BT /F1 11 Tf 48 692 Td (Nicht jede Anfrage ist gleich wichtig. High-, Medium- und Low-Faelle muessen schnell) Tj ET
+BT /F1 11 Tf 48 676 Td (eingeordnet werden, damit kritische Stoerungen zuerst bearbeitet werden.) Tj ET
+BT /F2 14 Tf 48 638 Td (2. Dokumentation hilft dem Team) Tj ET
+BT /F1 11 Tf 48 618 Td (Eine gute Ticketliste macht Probleme nachvollziehbar und reduziert Rueckfragen.) Tj ET
+BT /F2 14 Tf 48 580 Td (3. Wiederkehrende Themen erkennen) Tj ET
+BT /F1 11 Tf 48 560 Td (Wenn Hardware- oder Account-Faelle haeufig auftreten, lassen sich Standards und) Tj ET
+BT /F1 11 Tf 48 544 Td (Checklisten aufbauen. Genau daraus entsteht operative Verbesserung.) Tj ET
+BT /F2 14 Tf 48 506 Td (4. Passung fuer Bechtle) Tj ET
+BT /F1 11 Tf 48 486 Td (Das Projekt ergaenzt mein Praktikum sinnvoll: Ich zeige damit Support-Denken,) Tj ET
+BT /F1 11 Tf 48 470 Td (Service-Struktur und meine Motivation fuer technische Prozessarbeit.) Tj ET
+BT /F1 10 Tf 48 82 Td (Seite 2 fokussiert auf strukturierte Arbeitsweise, Priorisierung und klare Service-Logik.) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000000402 00000 n 
+0000000538 00000 n 
+0000002513 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3913
+%%EOF

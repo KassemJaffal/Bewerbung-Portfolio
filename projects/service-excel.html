@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service &amp; Excel Dashboard | Kassem Jaffal</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../projects.css" />
+  </head>
+  <body class="project-page">
+    <div class="project-shell">
+      <nav class="subnav" aria-label="Unterseiten-Navigation">
+        <a href="../index.html">Zur Startseite</a>
+        <div class="subnav__links">
+          <a href="bechtle-praktikum.html">IT-Praktikum</a>
+          <a href="python-snake.html">Python Snake</a>
+          <a href="yeet-platform.html">Yeet Plattform</a>
+        </div>
+      </nav>
+
+      <section class="project-hero" data-reveal>
+        <div class="project-hero__copy">
+          <p class="eyebrow">Projekt 02 · Service</p>
+          <h1>Service &amp; Excel Dashboard</h1>
+          <p class="project-copy">
+            Dieses Portfolio-Projekt zeigt, wie ich Serviceanfragen,
+            Hardware-Fälle, Prioritäten und Bearbeitungsstatus strukturiert
+            in Excel bzw. CSV dokumentieren würde. Der Fokus liegt auf
+            Nachvollziehbarkeit, Übersicht und schneller Priorisierung.
+          </p>
+          <div class="button-row">
+            <a class="button button--primary" href="../downloads/Bechtle_IT_Service_Dashboard.pdf">PDF öffnen</a>
+            <a class="button button--secondary" href="../downloads/Bechtle_IT_Service_ExcelPack.xlsx">Excel Pack</a>
+            <a class="button button--ghost" href="../downloads/bechtle_service_requests.csv">CSV</a>
+          </div>
+        </div>
+
+        <div class="project-hero__visual">
+          <img class="is-illustration" src="../assets/service-excel.svg" alt="Illustration zu Service, Excel und Ticketstruktur" />
+        </div>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">KPI Snapshot</p>
+        <h2>Direkt lesbare Kennzahlen für einen Service-Alltag</h2>
+        <div class="dashboard-grid">
+          <article class="dashboard-metric">
+            <span class="dashboard-metric__label">Tickets</span>
+            <span class="dashboard-metric__value">24</span>
+          </article>
+          <article class="dashboard-metric">
+            <span class="dashboard-metric__label">Ø Lösungszeit</span>
+            <span class="dashboard-metric__value">6,8 h</span>
+          </article>
+          <article class="dashboard-metric">
+            <span class="dashboard-metric__label">SLA erfüllt</span>
+            <span class="dashboard-metric__value">92%</span>
+          </article>
+          <article class="dashboard-metric">
+            <span class="dashboard-metric__label">Hardware-Fälle</span>
+            <span class="dashboard-metric__value">8</span>
+          </article>
+        </div>
+        <p class="metric-note">
+          Das Ziel ist nicht nur eine schöne Liste, sondern ein Format, mit dem man Anfragen sortieren, priorisieren und transparent weiterbearbeiten kann.
+        </p>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Analyse</p>
+        <h2>Wie ich Service-Daten übersichtlich strukturieren würde</h2>
+        <div class="chart-layout">
+          <article class="chart-panel">
+            <h3>Fälle nach Kategorie</h3>
+            <div class="bar-chart">
+              <div class="bar-row">
+                <span>Hardware</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+                <strong>8</strong>
+              </div>
+              <div class="bar-row">
+                <span>Accounts</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 88%"></div></div>
+                <strong>7</strong>
+              </div>
+              <div class="bar-row">
+                <span>Netzwerk</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 63%"></div></div>
+                <strong>5</strong>
+              </div>
+              <div class="bar-row">
+                <span>Software</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 50%"></div></div>
+                <strong>4</strong>
+              </div>
+            </div>
+            <p class="chart-caption">Die Verteilung zeigt, wo häufige Störungen liegen und welche Themen im Alltag besonders oft auftauchen.</p>
+          </article>
+
+          <article class="chart-panel">
+            <h3>Prioritäten</h3>
+            <div class="mini-bars">
+              <div class="bar-row">
+                <span>High</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 42%"></div></div>
+                <strong>5</strong>
+              </div>
+              <div class="bar-row">
+                <span>Medium</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+                <strong>12</strong>
+              </div>
+              <div class="bar-row">
+                <span>Low</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 58%"></div></div>
+                <strong>7</strong>
+              </div>
+            </div>
+            <div class="legend">
+              <span><strong>Nutzen:</strong> Priorisierung und Weitergabe</span>
+              <span><strong>Ansatz:</strong> klarer Status statt chaotischer Einzelnotizen</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Struktur</p>
+        <h2>Welche Felder für mich in einer guten Ticketliste wichtig sind</h2>
+        <div class="project-split">
+          <article class="checkout-box">
+            <ul class="project-list">
+              <li>Ticket-ID, Datum und Standort</li>
+              <li>Kategorie: Hardware, Netzwerk, Account oder Software</li>
+              <li>Priorität und aktueller Status</li>
+              <li>Bearbeiter, Gerät und kurze Problemzusammenfassung</li>
+              <li>Lösungszeit, SLA-Hinweis und nächster Schritt</li>
+            </ul>
+          </article>
+
+          <article class="code-window">
+            <div class="code-window__bar">
+              <span class="code-window__dot"></span>
+              <span class="code-window__dot"></span>
+              <span class="code-window__dot"></span>
+              <span class="code-window__tag">CSV Beispiel</span>
+            </div>
+            <pre>ticket_id,date,category,priority,status,device,resolution_hours
+SR-101,2026-02-03,Hardware,High,Resolved,Dell Latitude,3.5
+SR-102,2026-02-03,Accounts,Medium,Resolved,Microsoft 365,1.2
+SR-103,2026-02-04,Network,High,In Progress,Cisco Switch,6.0
+SR-104,2026-02-04,Software,Low,Resolved,VMware Workstation,4.1</pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-panel" data-reveal>
+        <p class="eyebrow">Dateien</p>
+        <h2>Direkt verwendbare Bewerbungs-Assets</h2>
+        <div class="download-row">
+          <a class="button button--primary" href="../downloads/Bechtle_IT_Service_Dashboard.pdf">PDF für Recruiter</a>
+          <a class="button button--secondary" href="../downloads/Bechtle_IT_Service_ExcelPack.xlsx">XLSX öffnen</a>
+          <a class="button button--ghost" href="../downloads/bechtle_service_requests.csv">Rohdaten</a>
+        </div>
+        <ul class="download-list">
+          <li>Die PDF verdichtet das Projekt auf einen klaren Management-Blick.</li>
+          <li>Die XLSX-Datei enthält ein Service-Datenblatt und ein Dashboard-Blatt.</li>
+          <li>Die CSV-Datei zeigt transparent, wie das Projekt strukturiert wurde.</li>
+        </ul>
+      </section>
+    </div>
+    <script src="../main.js"></script>
+  </body>
+</html>
