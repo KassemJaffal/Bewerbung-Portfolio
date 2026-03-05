@@ -18,7 +18,8 @@ function normalize(value) {
     .trim()
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ß/g, "ss");
 }
 
 function updateProgressBar() {
@@ -209,7 +210,7 @@ function bindCopyEmail() {
         copyToast.hidden = true;
       }, 1700);
     } catch {
-      copyToast.textContent = "Kopieren nicht moeglich";
+      copyToast.textContent = "Kopieren nicht möglich";
       copyToast.hidden = false;
       window.clearTimeout(bindCopyEmail.timeoutId);
       bindCopyEmail.timeoutId = window.setTimeout(() => {
