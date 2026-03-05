@@ -6,7 +6,7 @@
     <title>Kassem Jaffal | Bewerbung Ausbildung E-Commerce</title>
     <meta
       name="description"
-      content="Bewerbungsportfolio von Kassem Jaffal für eine Ausbildung im E-Commerce mit UX-Erfahrung, Shopify-Praxis, Excel-Ordermanagement und einem interaktiven Onlineshop-Demo-Projekt."
+      content="Bewerbungsportfolio von Kassem Jaffal für eine Ausbildung im E-Commerce mit UX-Erfahrung, Shopify-Praxis, Excel-Ordermanagement und einem interaktiven Onlineshop-Projekt."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +31,7 @@
 
         <nav class="site-nav" aria-label="Hauptnavigation">
           <a class="site-nav__link" href="#profil">Profil</a>
+          <a class="site-nav__link" href="#interaktiv">Interaktiv</a>
           <a class="site-nav__link" href="#lebenslauf">Lebenslauf</a>
           <a class="site-nav__link" href="#portfolio">Portfolio</a>
           <a class="site-nav__link" href="#kontakt">Kontakt</a>
@@ -43,7 +44,7 @@
     <main>
       <section class="section hero" id="profil" data-section="profil" data-reveal>
         <div class="container hero__layout">
-          <div class="hero__copy">
+          <div class="hero__copy" data-spotlight data-tilt>
             <p class="eyebrow">Bewerbung Ausbildung E-Commerce</p>
             <h1>UX, Shop-Logik und Order-Prozesse: mein Portfolio für den Einstieg in den E-Commerce.</h1>
             <p class="hero__lead">
@@ -66,7 +67,7 @@
           </div>
 
           <div class="hero__visual">
-            <article class="portrait-card" data-spotlight>
+            <article class="portrait-card" data-spotlight data-tilt>
               <img src="assets/portrait.png" alt="Portrait von Kassem Jaffal" loading="eager" />
               <div>
                 <p class="eyebrow">Profilbild</p>
@@ -76,24 +77,24 @@
             </article>
 
             <div class="hero__bento">
-              <article class="bento-card" data-spotlight>
+              <article class="bento-card" data-spotlight data-tilt>
                 <p class="bento-card__kicker">Praxis</p>
                 <h3>UX im Minijob</h3>
                 <p>Usability prüfen, Probleme dokumentieren, Nutzerfluss verbessern.</p>
               </article>
 
-              <article class="bento-card" data-spotlight>
+              <article class="bento-card" data-spotlight data-tilt>
                 <p class="bento-card__kicker">Build</p>
                 <h3>Shopify gelernt</h3>
                 <p>Produktseiten, Navigation und Checkout-Flow selbst aufgebaut.</p>
               </article>
 
-              <article class="bento-card bento-card--metric" data-spotlight>
+              <article class="bento-card bento-card--metric" data-spotlight data-tilt>
                 <strong data-count="2">2</strong>
                 <p>Portfolio-Projekte speziell für E-Commerce und Operations.</p>
               </article>
 
-              <article class="bento-card bento-card--metric" data-spotlight>
+              <article class="bento-card bento-card--metric" data-spotlight data-tilt>
                 <strong>2026</strong>
                 <p>Blue-White Designsystem mit modernem Hover- und Scroll-Verhalten.</p>
               </article>
@@ -111,7 +112,7 @@
           <span>Produkttexte</span>
           <span>Suchfunktion &amp; Filter</span>
           <span>Warenkorb-Logik</span>
-          <span>Checkout Demo</span>
+          <span>Checkout Flow</span>
         </div>
       </section>
 
@@ -119,29 +120,88 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Visuelle Arbeitsproben</p>
-            <h2>Mehr Bilder und Grafiken aus meinen Shop- und Analyseprojekten</h2>
+            <h2>Mehr freie Bilder und Grafiken aus meinen Shop- und Analyseprojekten</h2>
           </div>
 
           <div class="image-gallery">
-            <article class="image-tile image-tile--wide" data-spotlight>
+            <article class="image-tile image-tile--wide" data-spotlight data-tilt>
               <img src="assets/mock-fanshop.jpg" alt="Mockup eines Shops mit Produktübersicht" loading="lazy" />
               <div class="image-tile__label">Shop-Layout &amp; Nutzerführung</div>
             </article>
-            <article class="image-tile" data-spotlight>
+            <article class="image-tile" data-spotlight data-tilt>
               <img src="assets/excel-kpi-dashboard.jpg" alt="Dashboard mit KPI-Auswertung" loading="lazy" />
               <div class="image-tile__label">KPI-Analyse in Excel</div>
             </article>
-            <article class="image-tile" data-spotlight>
-              <img src="assets/product-jersey.jpg" alt="Produktfoto eines T-Shirts" loading="lazy" />
-              <div class="image-tile__label">Produktdarstellung</div>
+            <article class="image-tile" data-spotlight data-tilt>
+              <img src="assets/tshirt-white.svg" alt="Freies Produktbild T-Shirt Weiß" loading="lazy" />
+              <div class="image-tile__label">Produktbild Weiß</div>
             </article>
-            <article class="image-tile" data-spotlight>
-              <img src="assets/product-scarf.jpg" alt="Weiteres Produktbild für einen Shop" loading="lazy" />
-              <div class="image-tile__label">Sortiment &amp; Content</div>
+            <article class="image-tile" data-spotlight data-tilt>
+              <img src="assets/tshirt-black.svg" alt="Freies Produktbild T-Shirt Schwarz" loading="lazy" />
+              <div class="image-tile__label">Produktbild Schwarz</div>
             </article>
-            <article class="image-tile" data-spotlight>
-              <img src="assets/product-rack.jpg" alt="Produkt-Grid im Shop-Kontext" loading="lazy" />
-              <div class="image-tile__label">Grid-Logik</div>
+            <article class="image-tile" data-spotlight data-tilt>
+              <img src="assets/tshirt-blue.svg" alt="Freies Produktbild T-Shirt Blau" loading="lazy" />
+              <div class="image-tile__label">Produktbild Blau</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="interaktiv" data-section="interaktiv" data-reveal>
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Interaktive Features</p>
+            <h2>2026-Style: klickbare Szenarien, Rechner und Live-Vorschau</h2>
+          </div>
+
+          <div class="interactive-grid">
+            <article class="interactive-card" data-spotlight data-tilt>
+              <h3>Shop-Szenario wechseln</h3>
+              <div class="scenario-tabs">
+                <button class="chip is-active" type="button" data-scenario="launch">Launch Week</button>
+                <button class="chip" type="button" data-scenario="sale">Sale Event</button>
+                <button class="chip" type="button" data-scenario="retain">Retention</button>
+              </div>
+
+              <div class="scenario-preview">
+                <img id="scenarioImage" src="assets/ecom-scenario-launch.svg" alt="Szenario-Vorschau Launch Week" loading="lazy" />
+                <div>
+                  <h4 id="scenarioTitle">Launch Week</h4>
+                  <p id="scenarioText">Fokus auf klare Navigation, Hero-Angebote und schnelle Orientierung für neue Besucher.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="interactive-card" data-spotlight data-tilt>
+              <h3>E-Commerce Rechner</h3>
+              <p class="interactive-note">Passe die Regler an und sieh sofort Bestellungen und Umsatz.</p>
+
+              <div class="range-group">
+                <label for="visitorsRange">Besucher / Monat: <strong id="visitorsValue">18000</strong></label>
+                <input id="visitorsRange" type="range" min="1000" max="100000" step="500" value="18000" />
+              </div>
+
+              <div class="range-group">
+                <label for="conversionRange">Conversion Rate: <strong id="conversionValue">2.8%</strong></label>
+                <input id="conversionRange" type="range" min="0.5" max="8" step="0.1" value="2.8" />
+              </div>
+
+              <div class="range-group">
+                <label for="basketRange">Durchschnittlicher Warenkorb: <strong id="basketValue">46 EUR</strong></label>
+                <input id="basketRange" type="range" min="10" max="220" step="1" value="46" />
+              </div>
+
+              <div class="kpi-results">
+                <article>
+                  <span>Bestellungen</span>
+                  <strong id="ordersOutput">504</strong>
+                </article>
+                <article>
+                  <span>Monatsumsatz</span>
+                  <strong id="revenueOutput">23.184 EUR</strong>
+                </article>
+              </div>
             </article>
           </div>
         </div>
@@ -155,7 +215,7 @@
           </div>
 
           <div class="resume-grid">
-            <article class="card" data-spotlight>
+            <article class="card" data-spotlight data-tilt>
               <h3>Profil</h3>
               <p><strong>Kassem Jaffal</strong></p>
               <p>Freiburg im Breisgau</p>
@@ -164,7 +224,7 @@
               <p>Sprachen: Deutsch, Englisch, Französisch, Spanisch</p>
             </article>
 
-            <article class="card card--wide" data-spotlight>
+            <article class="card card--wide" data-spotlight data-tilt>
               <h3>Erfahrung</h3>
               <div class="timeline">
                 <article class="timeline-item">
@@ -198,7 +258,7 @@
               </div>
             </article>
 
-            <article class="card" data-spotlight>
+            <article class="card" data-spotlight data-tilt>
               <h3>Starke Bereiche</h3>
               <ul class="check-list">
                 <li>UX- und Nutzerfluss-Verständnis</li>
@@ -225,7 +285,7 @@
               <input
                 id="portfolioSearch"
                 type="search"
-                placeholder="z. B. Shop, Excel, Orders, Checkout"
+                placeholder="z. B. Shop, Excel, Orders"
                 autocomplete="off"
               />
             </label>
@@ -245,6 +305,7 @@
               data-category="operations"
               data-search="excel order management dashboard bestellungen kpi auswertung operations"
               data-spotlight
+              data-tilt
             >
               <div class="portfolio-card__media" aria-hidden="true">
                 <img src="assets/excel-kpi-dashboard.jpg" alt="" loading="lazy" />
@@ -266,20 +327,21 @@
             <article
               class="portfolio-card"
               data-category="shop"
-              data-search="onlineshop t-shirt weiß schwarz blau warenkorb reviews menü suche filter checkout paypal"
+              data-search="onlineshop t-shirt weiß schwarz blau warenkorb reviews menü suche filter"
               data-spotlight
+              data-tilt
             >
               <div class="portfolio-card__media" aria-hidden="true">
-                <img src="assets/mock-fanshop.jpg" alt="" loading="lazy" />
+                <img src="assets/ecom-scenario-sale.svg" alt="" loading="lazy" />
               </div>
               <div class="portfolio-card__body">
                 <span class="portfolio-card__tag">Shop</span>
                 <h3>Mini Onlineshop Demo</h3>
                 <p>
-                  Drei T-Shirts (weiß, schwarz, blau) mit Produkttexten, Suche,
-                  Filter, Warenkorb, Reviews und einem nicht-echten PayPal-Checkout.
+                  Drei T-Shirts (weiß, schwarz, blau) mit Produktbildern,
+                  Suche, Filter, Warenkorb und modernem Slider-Layout.
                 </p>
-                <p class="portfolio-card__meta">Features: Produktlogik, UX, Checkout-Demo</p>
+                <p class="portfolio-card__meta">Features: Produktlogik, UX, Interaktion</p>
                 <div class="portfolio-card__actions">
                   <a class="button button--card" href="projects/shop-demo.html">Live-Demo öffnen</a>
                 </div>
@@ -298,7 +360,7 @@
             <h2>Direkt erreichbar für die E-Commerce-Ausbildung</h2>
           </div>
 
-          <div class="contact-panel" data-spotlight>
+          <div class="contact-panel" data-spotlight data-tilt>
             <div>
               <h3>Kassem Jaffal</h3>
               <p>Freiburg im Breisgau</p>
@@ -307,12 +369,7 @@
             </div>
             <div class="contact-actions">
               <a class="button button--primary" href="mailto:Hassan1.jaffal1@outlook.de">E-Mail schreiben</a>
-              <button
-                class="button button--secondary"
-                type="button"
-                id="copyEmailButton"
-                data-copy="Hassan1.jaffal1@outlook.de"
-              >
+              <button class="button button--secondary" type="button" id="copyEmailButton" data-copy="Hassan1.jaffal1@outlook.de">
                 E-Mail kopieren
               </button>
             </div>
@@ -330,7 +387,7 @@
         </div>
         <div>
           <ul class="footer-links">
-            <li><a href="#lebenslauf">Lebenslauf</a></li>
+            <li><a href="#interaktiv">Interaktiv</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="legal/impressum.html">Impressum</a></li>
             <li><a href="legal/datenschutz.html">Datenschutz</a></li>
@@ -338,7 +395,7 @@
         </div>
       </div>
       <div class="site-footer__meta">
-        <p>Designrichtung: Blue Commerce UI mit klarer Informationsarchitektur und modernen Motion-Effekten.</p>
+        <p>Designrichtung: Blue Commerce UI mit interaktiven 2026-Webpattern und Motion-Effekten.</p>
         <a href="#top">Nach oben</a>
       </div>
     </footer>

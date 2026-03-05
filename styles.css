@@ -441,6 +441,109 @@ p {
   font-weight: 700;
 }
 
+.interactive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.interactive-card {
+  border: 1px solid rgba(109, 153, 241, 0.35);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.interactive-card h3 {
+  font-size: 1.16rem;
+}
+
+.interactive-note {
+  margin-top: 0.38rem;
+  color: var(--ink-soft);
+}
+
+.scenario-tabs {
+  margin-top: 0.78rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.scenario-preview {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.72rem;
+}
+
+.scenario-preview img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(117, 160, 243, 0.44);
+  background: #f5f9ff;
+}
+
+.scenario-preview h4 {
+  font-size: 1.04rem;
+}
+
+.scenario-preview p {
+  margin-top: 0.35rem;
+  color: var(--ink-soft);
+}
+
+.range-group {
+  margin-top: 0.75rem;
+}
+
+.range-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.range-group label strong {
+  color: var(--primary-strong);
+}
+
+.range-group input[type="range"] {
+  margin-top: 0.4rem;
+  width: 100%;
+  accent-color: var(--primary);
+}
+
+.kpi-results {
+  margin-top: 0.95rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.kpi-results article {
+  border: 1px solid rgba(117, 160, 243, 0.44);
+  border-radius: 13px;
+  padding: 0.74rem;
+  background: rgba(244, 249, 255, 0.9);
+}
+
+.kpi-results span {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.kpi-results strong {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--primary-strong);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+}
+
 .resume-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -814,6 +917,10 @@ p {
     grid-column: span 2;
   }
 
+  .interactive-grid {
+    grid-template-columns: 1fr;
+  }
+
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
@@ -852,6 +959,10 @@ p {
   }
 
   .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .kpi-results {
     grid-template-columns: 1fr;
   }
 

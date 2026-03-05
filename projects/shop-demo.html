@@ -23,6 +23,7 @@
           <a href="#reviews">Rezensionen</a>
           <a href="#cart">Warenkorb</a>
         </nav>
+        <span class="quick-stat" id="wishlistCountBadge">Favoriten: 0</span>
       </div>
     </header>
 
@@ -34,8 +35,7 @@
             <h1>Onlineshop Demo mit moderner Marketplace-Struktur</h1>
             <p>
               Drei T-Shirts (weiß, schwarz, blau), Produktsuche, Farbfilter,
-              Warenkorb, Rezensionen und ein nicht-echter PayPal-Checkout.
-              Die Oberfläche ist bewusst in Blau/Weiß gestaltet.
+              Sortierung, Favoriten und Warenkorb mit Live-Summe.
             </p>
           </div>
           <div class="shop-hero-cta">
@@ -54,7 +54,7 @@
             </div>
           </article>
           <article class="shop-slide">
-            <img src="../assets/product-jersey.jpg" alt="Produktfoto eines T-Shirts als Shop-Banner" loading="lazy" />
+            <img src="../assets/ecom-scenario-sale.svg" alt="Visualisierung eines Sale-Events" loading="lazy" />
             <div class="shop-slide__content">
               <span>Conversion</span>
               <h2>Produktfotos, Preis und Nutzen im ersten Blick</h2>
@@ -62,7 +62,7 @@
             </div>
           </article>
           <article class="shop-slide">
-            <img src="../assets/excel-kpi-dashboard.jpg" alt="KPI-Dashboard für Shop-Operationen" loading="lazy" />
+            <img src="../assets/ecom-scenario-retain.svg" alt="Visualisierung von Retention-Features" loading="lazy" />
             <div class="shop-slide__content">
               <span>Operations</span>
               <h2>Daten und Shop-Erlebnis zusammen gedacht</h2>
@@ -70,12 +70,8 @@
             </div>
           </article>
 
-          <button class="shop-slider__arrow shop-slider__arrow--prev" type="button" id="sliderPrev" aria-label="Vorherige Folie">
-            ‹
-          </button>
-          <button class="shop-slider__arrow shop-slider__arrow--next" type="button" id="sliderNext" aria-label="Nächste Folie">
-            ›
-          </button>
+          <button class="shop-slider__arrow shop-slider__arrow--prev" type="button" id="sliderPrev" aria-label="Vorherige Folie">‹</button>
+          <button class="shop-slider__arrow shop-slider__arrow--next" type="button" id="sliderNext" aria-label="Nächste Folie">›</button>
           <div class="shop-slider__dots" id="shopSliderDots" aria-label="Slider-Navigation"></div>
         </div>
       </section>
@@ -87,11 +83,23 @@
             <input id="shopSearch" type="search" placeholder="z. B. weiß, schwarz, blau" autocomplete="off" />
           </label>
 
-          <div class="filter-chips" aria-label="Farbfilter">
-            <button class="chip is-active" type="button" data-color-filter="all">Alle</button>
-            <button class="chip" type="button" data-color-filter="weiß">Weiß</button>
-            <button class="chip" type="button" data-color-filter="schwarz">Schwarz</button>
-            <button class="chip" type="button" data-color-filter="blau">Blau</button>
+          <div class="shop-toolbar__actions">
+            <div class="filter-chips" aria-label="Farbfilter">
+              <button class="chip is-active" type="button" data-color-filter="all">Alle</button>
+              <button class="chip" type="button" data-color-filter="weiß">Weiß</button>
+              <button class="chip" type="button" data-color-filter="schwarz">Schwarz</button>
+              <button class="chip" type="button" data-color-filter="blau">Blau</button>
+            </div>
+
+            <label class="sort-field" for="sortSelect">
+              <span>Sortieren</span>
+              <select id="sortSelect">
+                <option value="featured">Empfohlen</option>
+                <option value="price-asc">Preis aufsteigend</option>
+                <option value="price-desc">Preis absteigend</option>
+                <option value="rating-desc">Bewertung</option>
+              </select>
+            </label>
           </div>
         </div>
 
@@ -103,10 +111,12 @@
               data-name="T-Shirt Weiß"
               data-color="weiß"
               data-price="32.9"
+              data-rating="4.8"
               data-search="t-shirt weiß basic leicht sommer"
             >
+              <button class="wishlist-button" type="button" data-wishlist="white" aria-label="Zu Favoriten hinzufügen">♡</button>
               <span class="product-badge">Prime Demo</span>
-              <div class="product-thumb product-thumb--white" aria-hidden="true"></div>
+              <img class="product-photo" src="../assets/tshirt-white.svg" alt="Vollansicht T-Shirt Weiß" loading="lazy" />
               <h3>T-Shirt Weiß</h3>
               <p class="product-rating">★★★★★ <span>4,8 (143)</span></p>
               <p>Clean Basic Look, leichter Stoff, modern geschnitten.</p>
@@ -121,10 +131,12 @@
               data-name="T-Shirt Schwarz"
               data-color="schwarz"
               data-price="36.9"
+              data-rating="4.9"
               data-search="t-shirt schwarz streetwear premium"
             >
+              <button class="wishlist-button" type="button" data-wishlist="black" aria-label="Zu Favoriten hinzufügen">♡</button>
               <span class="product-badge">Bestseller</span>
-              <div class="product-thumb product-thumb--black" aria-hidden="true"></div>
+              <img class="product-photo" src="../assets/tshirt-black.svg" alt="Vollansicht T-Shirt Schwarz" loading="lazy" />
               <h3>T-Shirt Schwarz</h3>
               <p class="product-rating">★★★★★ <span>4,9 (212)</span></p>
               <p>Streetwear Fit mit klarer Silhouette und stabilem Material.</p>
@@ -139,10 +151,12 @@
               data-name="T-Shirt Blau"
               data-color="blau"
               data-price="34.9"
+              data-rating="4.6"
               data-search="t-shirt blau comfort modern"
             >
+              <button class="wishlist-button" type="button" data-wishlist="blue" aria-label="Zu Favoriten hinzufügen">♡</button>
               <span class="product-badge">Neu</span>
-              <div class="product-thumb product-thumb--blue" aria-hidden="true"></div>
+              <img class="product-photo" src="../assets/tshirt-blue.svg" alt="Vollansicht T-Shirt Blau" loading="lazy" />
               <h3>T-Shirt Blau</h3>
               <p class="product-rating">★★★★☆ <span>4,6 (98)</span></p>
               <p>Signature-Farbe, weicher Tragekomfort, alltagstaugliches Design.</p>
@@ -157,9 +171,17 @@
             <ul id="cartItems" class="cart-items">
               <li class="cart-empty">Noch keine Produkte im Warenkorb.</li>
             </ul>
+
+            <div class="shipping-box">
+              <p id="shippingLabel">Noch 90 EUR bis zum Gratisversand.</p>
+              <div class="shipping-track"><span id="shippingFill"></span></div>
+            </div>
+
             <p class="cart-total">Gesamtsumme: <strong id="cartSubtotal">0,00 EUR</strong></p>
-            <button class="button button--primary" type="button" id="checkoutButton">Mit PayPal bezahlen (Demo)</button>
-            <p class="cart-note">Hinweis: Das ist ein Demo-Checkout ohne echte Zahlung.</p>
+            <div class="cart-actions">
+              <button class="button button--secondary" type="button" id="clearCartButton">Warenkorb leeren</button>
+            </div>
+            <p class="cart-note">Hinweis: Fokus auf Produktdarstellung und Warenkorb-Logik.</p>
           </aside>
         </div>
       </section>
@@ -186,18 +208,6 @@
         </div>
       </section>
     </main>
-
-    <div class="modal" id="checkoutModal" hidden aria-hidden="true">
-      <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
-        <button class="modal__close" type="button" id="closeCheckoutX" aria-label="Dialog schließen">×</button>
-        <h2 id="checkoutTitle">PayPal Demo Checkout</h2>
-        <p id="checkoutSummary">Keine Produkte ausgewählt.</p>
-        <div class="modal__actions">
-          <button class="button button--primary" type="button" id="confirmPaypal">Demo-Zahlung abschließen</button>
-          <button class="button button--secondary" type="button" id="closeCheckout">Schließen</button>
-        </div>
-      </div>
-    </div>
 
     <div class="shop-toast" id="shopToast" hidden></div>
 
